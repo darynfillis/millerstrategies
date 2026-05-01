@@ -1,0 +1,9 @@
+/* TEAM */
+Site: Miller Strategies
+Contact: INFO@MILLERSTRATEGIES.COM
+Location: Washington, D.C.
+
+/* SITE */
+Language: English
+Standards: HTML5, CSS3, JSON-LD structured data
+Sitemap: https://millerstrategies.com/sitemap.xml
