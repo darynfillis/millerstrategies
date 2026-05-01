@@ -1,0 +1,20 @@
+# Headshot mapping based on uploaded filenames
+
+Jeff Miller = team/headshots/jeff-miller.jpg
+George Caram = team/headshots/george-caram.jpg
+Tyler Grimm = team/headshots/tyler-grimm.jpg
+Ashley Gunn = team/headshots/ashley-gunn.jpg
+Jonny Hiler = team/headshots/jonny-hiler.jpg
+Jessica Mandel = team/headshots/jessica-mandel.jpg
+Natalie McIntyre = team/headshots/natalie-mcintyre.jpg
+Stefan Passantino = team/headshots/stefan-passantino.jpg
+Steve Ruppel = team/headshots/steve-ruppel.jpg
+Luke Wallwork = team/headshots/luke-wallwork.jpg
+Trey Gowdy, Esq. = team/headshots/trey-gowdy.jpg
+Sharon Dittmar = team/headshots/sharon-dittmar.jpg
+James Min = team/headshots/james-min.jpg
+Dylan O’Rand = team/headshots/dylan-orand.jpg
+Katie Peil = team/headshots/katie-peil.jpg
+Cate Redmond = team/headshots/cate-redmond.jpg
+Shane Rose = team/headshots/shane-rose.jpg
+Parker Rossignol = team/headshots/parker-rossignol.jpg
