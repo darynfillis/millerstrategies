@@ -1599,3 +1599,77 @@ button[type="submit"]:hover {
     border-radius: 18px;
   }
 }
+
+
+
+/* Profile pages standardized to Jeff Miller exact template */
+.section.white .container.grid.grid-2 > aside.card .text {
+  display: block;
+  margin-top: 12px;
+  color: rgba(23,33,43,.72);
+}
+
+.section.white .container.grid.grid-2 > aside.card .button {
+  margin-top: 18px;
+}
+
+.section.white .container.grid.grid-2 > div .text {
+  display: block;
+}
+
+.section.white .container.grid.grid-2 > div .text + .text {
+  margin-top: 16px;
+}
+
+
+/* Profile bio template: card + right-column BIO headline */
+.profile-bio-template {
+  align-items: start;
+}
+
+.profile-bio-copy .label {
+  margin-bottom: 18px;
+}
+
+.profile-bio-headline {
+  color: #102B3F;
+  font-size: clamp(34px, 4.2vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 950;
+  margin: 0 0 28px;
+}
+
+.bio-card-summary {
+  display: block;
+  margin-top: 12px;
+  color: #102B3F;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 900;
+}
+
+.bio-card-summary strong {
+  font-weight: 900;
+}
+
+.profile-bio-copy .text + .text {
+  margin-top: 18px;
+}
+
+.profile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.profile-socials .social-icon {
+  min-height: 38px;
+}
+
+@media (max-width: 767px) {
+  .profile-bio-headline {
+    font-size: clamp(30px, 9.5vw, 42px);
+  }
+}
