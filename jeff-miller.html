@@ -50,16 +50,25 @@
 
 
 
+
+
 <section class="section white jeff-video-section">
   <div class="container">
     <p class="label">Featured video</p>
     <h2>Jeff Miller in conversation.</h2>
 
     <div class="video-embed-wrap" aria-label="Embedded YouTube video featuring Jeff Miller">
-      <div id="jeff-youtube-player"></div>
-      <div class="youtube-player-error" id="jeff-youtube-error" hidden>
-        <p>This video could not be loaded inside the page. You can still watch it directly on YouTube.</p>
-      </div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/srJpjKBlCJY?si=8UQs35iS0fynkJLc"
+        title="YouTube video player"
+        loading="lazy"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
 
     <div class="video-fallback-actions">
@@ -272,66 +281,7 @@
 </script>
 
 
-<script>
-(function () {
-  var videoId = "srJpjKBlCJY";
-  var playerElementId = "jeff-youtube-player";
-  var errorElementId = "jeff-youtube-error";
 
-  function showYouTubeError() {
-    var error = document.getElementById(errorElementId);
-    if (error) error.hidden = false;
-  }
-
-  function createJeffYouTubePlayer() {
-    var playerElement = document.getElementById(playerElementId);
-    if (!playerElement || !window.YT || !window.YT.Player) return;
-
-    try {
-      new window.YT.Player(playerElementId, {
-        videoId: videoId,
-        width: "100%",
-        height: "100%",
-        playerVars: {
-          playsinline: 1,
-          rel: 0,
-          modestbranding: 1,
-          origin: window.location.origin
-        },
-        events: {
-          onError: function () {
-            showYouTubeError();
-          }
-        }
-      });
-    } catch (error) {
-      showYouTubeError();
-    }
-  }
-
-  var previousReady = window.onYouTubeIframeAPIReady;
-  window.onYouTubeIframeAPIReady = function () {
-    if (typeof previousReady === "function") previousReady();
-    createJeffYouTubePlayer();
-  };
-
-  if (window.YT && window.YT.Player) {
-    createJeffYouTubePlayer();
-  } else if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
-    var tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
-
-  window.setTimeout(function () {
-    var playerElement = document.getElementById(playerElementId);
-    if (playerElement && !playerElement.querySelector("iframe")) {
-      showYouTubeError();
-    }
-  }, 5000);
-})();
-</script>
 
 
 <script>

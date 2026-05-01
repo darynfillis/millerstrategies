@@ -1,0 +1,7 @@
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: fullscreen=*, picture-in-picture=*
+  X-Content-Type-Options: nosniff
+
+/jeff-miller.html
+  Referrer-Policy: strict-origin-when-cross-origin
