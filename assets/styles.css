@@ -1503,3 +1503,99 @@ button[type="submit"]:hover {
 .video-fallback-actions {
   margin-top: 22px;
 }
+
+
+/* Homepage team and scattered press quote sections */
+.home-team-inline {
+  background: var(--cream, #FAF7F2);
+}
+
+.home-team-grid {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 980px) {
+  .home-team-grid {
+    grid-template-columns: 1.08fr .92fr;
+  }
+}
+
+.home-team-photo-wrap {
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid var(--line, #E7DDD6);
+  background: #fff;
+  box-shadow: 0 18px 48px rgba(7,24,36,.08);
+}
+
+.home-team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-team-copy .text + .text {
+  margin-top: 16px;
+}
+
+.inline-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.press-strip-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.press-strip-section.mist {
+  background: var(--mist, #EFF4F6);
+}
+
+.press-strip-card {
+  margin: 0;
+  border: 1px solid var(--line, #E7DDD6);
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(7,24,36,.05);
+}
+
+.press-strip-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.press-strip-card figcaption {
+  padding: 12px 18px 16px;
+  color: rgba(23,33,43,.62);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .home-team-grid {
+    gap: 22px;
+  }
+
+  .inline-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .press-strip-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .press-strip-card {
+    border-radius: 18px;
+  }
+}
